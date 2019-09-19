@@ -1,0 +1,125 @@
+/*kama的样式*/
+.kam-nav {
+	height: 1.5rem;
+	padding: 0.25rem 0;
+	transform: translateY(-100%);
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+}
+.kam-nav.active{
+	visibility: visible;
+	transition: transform 1s;
+	transform: translateY(0);
+}
+.kam-nav .nav{
+	width:40%;
+	line-height: 0.8rem;
+	font-size: 0.16rem;
+}
+.nav .nav-item{
+	padding: 0.1rem 0.25rem;
+}
+.kam-nav .logo{
+	font-size: .18rem;
+	font-weight: bolder;
+}
+.kam-nav .logo.lg{
+	font-size: .18rem;
+	font-weight: bolder;
+	margin-top: -80px;
+}
+.kam-nav .logo.md{
+	display: none;
+}
+.kam-nav .logo img{
+	width: 60px;
+}
+.navbar-header{
+	position: relative;
+	z-index: 2;
+}
+.navbar-toggle {
+	width: 40px;
+	height: 40px;
+	background: #fe7074;
+	
+	padding: 0 0 ;
+	margin-left: 10px;
+}
+.navbar-toggle .icon-bar{
+	background: #fff;
+	margin: 0 auto;
+}
+.kam-nav-collapse-menu.in{
+	display: none;
+}
+.first-page .row{
+	height: 600px;
+	background: url(../img/harmer.jpg) no-repeat center -105px;
+	background-size: 1000px;
+}
+.first-page-header{
+	margin-top: 1rem;
+	padding-left: 0.6rem;
+}
+.first-page-text{
+	margin-top: 1.6rem;
+	padding-left: 0.6rem;
+}
+@media only screen and (max-width: 1150px) {
+	.kam-nav .nav{
+		width: 50%;
+	}
+	.kam-nav .logo.lg{
+		display: none;
+	}
+	.kam-nav .logo.md{
+		display: block;
+		margin-bottom: -20px;
+	}
+}
+@media only screen and (max-width: 745px) {
+	.kam-nav-collapse{
+		background: #000;
+		height: 200px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+	}
+	.kam-nav-collapse-menu{
+		width: 100%;
+		position: fixed;
+		z-index: 3;
+		background: #FFF;
+		text-align: left;
+	}
+	.kam-nav-collapse-menu.in{
+		display: block;
+	}
+	.kam-nav-collapse-menu span{
+		padding: 10px 10px;
+		cursor: pointer;
+	}
+	.kam-nav-collapse-menu span:hover{
+		color: red;
+	}
+	.kam-nav-collapse-menu .menu-lists{
+		
+		padding:0 10px;
+		margin-top: 40px;
+	}
+	.kam-nav-collapse-menu .menu-lists li{
+		list-style: none;
+		border-bottom: 1px solid #E2E2E2;
+		padding: 15px 30px;
+	}
+	.kam-nav-collapse-menu .menu-lists li:hover{
+		background: #E2E2E2;
+	}
+	.kam-nav-collapse-menu .menu-lists li a{
+		color: #000;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}

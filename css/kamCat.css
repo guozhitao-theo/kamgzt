@@ -56,7 +56,7 @@
 }
 .first-page .row{
 	height: 600px;
-	background: url(../img/harmer.jpg) no-repeat center -105px;
+	background: url(../img/harmer.jpg) no-repeat center -0.95rem;
 	background-size: 1000px;
 }
 .first-page-header{
